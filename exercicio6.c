@@ -23,7 +23,8 @@ main(){
         break;
     }
 
-
+} while (continuar == 0);
+        printf("solicite a quantidade de frutas:");
 
 
 
