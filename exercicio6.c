@@ -6,12 +6,11 @@ main(){
      Assim, apresente a lista de frutas disponíveis, abaixo, com seus respectivos valores.
      O algoritmo deve permitir ao usuário retomar o menu frutas quantas vezes quiser,
       e solicitar a quantidade de frutas. Ao final, apresente o valor total da compra. 
-
      1 => ABACAXI – 5,00 a unidade 2 => MAÇA – 1,00 a unidade 3 => PERA – 4,00 a unidade*/
 
-    int frutas, valor, quantidade, valorTotal;
+    int menufrutas, valor, quantidade, valorTotal, continuar, total = 0.0;
 
-    switch(frutas){
+    switch(menufrutas){
     case 1:
         printf("Abacaxi :R$ 5,00 a unidade\n");
         break;
@@ -23,8 +22,33 @@ main(){
         break;
     }
 
-} while (continuar == 0);
+    while (continuar == 0); {
         printf("solicite a quantidade de frutas:");
+        if("%d", &quantidade);{
+                    total += quantidade * valorTotal;
+                    total += quantidade * valorTotal;
+        }
+    } 
+ printf("\nMostre o valor final da compra %d %d %d", valor, quantidade, valorTotal);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
