@@ -28,48 +28,8 @@ main(){
                     total += quantidade * valorTotal;
                     total += quantidade * valorTotal;
         }
-    } 
- printf("\nMostre o valor final da compra %d %d %d", valor, quantidade, valorTotal);
+        
+    } printf("\nMostre o valor final da compra %d %d %d", valor, quantidade, valorTotal);
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
