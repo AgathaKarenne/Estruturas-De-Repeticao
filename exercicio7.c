@@ -16,6 +16,10 @@ main(){
             printf("digite o sexo: (m ou f)");
             scanf("%c", &sexo);
             fflush(stdin);
+            if(sexo == 'm'){
+                totalM++;
+            }else if(sexo == 'f'){
+                totalF++;
             if(sexo != 'm' && sexo != 'f'){
                 printf("\nopção invalida");
 
@@ -50,8 +54,21 @@ main(){
                 printf("\opção invalida");
             }
         }while(idade < 10 || idade > 100);
+
+        //preencher e validar o campo salario
+        do{
+            fflush(stdin);
+            printf("Digite o salario");
+            scanf("%d", &salario);
             
         totalHabitantes++; 
         printf("Deseja cadastrar um novo habitante: 1 SIM -1 NAO");
-        scanf("%d", &idade);
-    }while(idade != -1);
+        scanf("%d", &opção);
+    }while(opção != -1);
+
+        porcentagem = totalEspecifico/totalhHabitantes*100;
+
+        printf("\nTotal de habitantes cadastrados: %d", totalhabitantes");
+        printf("\nTotal de homens cadastrados: %d", totalH);
+        printf("\nTotal de mulheres cadastrados: %d, totalM);
+        printf("\nPorcentagem de Pessoas com caracteristicas especificas: %.2f", porcentagem);
