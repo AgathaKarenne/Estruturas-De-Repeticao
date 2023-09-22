@@ -12,7 +12,7 @@ main(){
         totalHabitantes++;
         //validar e preencher o campo sexo
         do{ 
-
+            fflush(stdin);
             printf("digite o sexo: (m ou f)");
             scanf("%c", &sexo);
             fflush(stdin);
@@ -32,6 +32,26 @@ main(){
 
         }while(olhos != 'a' && olhos != 'p' && olhos != 'c' && olhos != 'v');
 
+        //preencher e validar o campo cabelos
+        do{
+            fflush(stdin);
+            printf("Digite a cor dos cabelos');
+            scanf("%c", &cabelos);
+            if(cabelos != 'l' && cabelos != 'c' && cabelos != 'p' && cabelos != 'r'){
+            printf("Opção invalida");
+        }while(cabelos != 'l'&& cabelos != 'c' && cabelos != 'p' && cabelos != 'r');
+
+        //preencher e validar o campo idade
+        do{
+            fflush(stdin);
+            printf("Digite a idade");
+            scanf("%d", &idade);
+            if(idade < 10 || idade > 100){
+                printf("\opção invalida");
+            }
+        }while(idade < 10 || idade > 100);
+            
+        totalHabitantes++; 
         printf("Deseja cadastrar um novo habitante: 1 SIM -1 NAO");
         scanf("%d", &idade);
     }while(idade != -1);
