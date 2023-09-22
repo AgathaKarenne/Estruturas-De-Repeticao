@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 main(){
 
@@ -15,9 +16,9 @@ main(){
         printf("1. Abacaxi - R$5.00 por unidade\n");
         printf("2. Maçã - R$1.00 por unidade\n");
         printf("3. Pera - R$4.00 por unidade\n");
+        printf("4. Sair\n");
         printf("Escolha uma opção: ");
-        scanf("%d", &opcao);
-    }
+        scanf("%d", &opção);
 
     switch(opção){
         case 01
@@ -25,7 +26,7 @@ main(){
             scanf("%d", &quantidade);
             total += quantidade * 5.00;
             break;
-         case 02
+        case 02
             printf("quantas maças deseja comprar");
             scanf("%d", &quantidade);
             total += quantidade * 1.00;
@@ -35,14 +36,17 @@ main(){
             scanf("%d", &quantidade);
             total += quantidade *4.00;
             break;
-   
-   
-        
-    } printf("\nMostre o valor final da compra %d %d %d", valor, quantidade, valorTotal);
+        case 04
+            printf("Total da compra: R$%.2f\n", total);
+            printf("Obrigado por comprar conosco!\n");
+        default;
 
-}while (opção != 1, 2, 3);
+        }
+
+    while (opção != 1, 2, 3, 4);{
     printf("Esta fruta não esta disponivel");
-    scanf("%d", &opção);
+    scanf("%d", &opção);}
     EXIT_SUCCESS
 
-
+    }
+}
